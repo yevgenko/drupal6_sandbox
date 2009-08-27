@@ -1,3 +1,6 @@
 [submodule "drupal"]
 	path = drupal
 	url = git://github.com/yviktorov/drupal.git
+[submodule "dbscripts"]
+	path = dbscripts
+	url = git://github.com/ceardach/dbscripts.git
