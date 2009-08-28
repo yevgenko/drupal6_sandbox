@@ -1,0 +1,221 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  fontsize.module, 6.x-1.0 2008/03/01 00:00:00 hass
+#  fontsize.install, 6.x-1.0 2008/03/01 00:00:00 hass
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-03-01 23:36+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: fontsize.admin.inc:14
+msgid "Global settings"
+msgstr ""
+
+#: fontsize.admin.inc:20
+msgid "Minimum font size"
+msgstr ""
+
+#: fontsize.admin.inc:23;32;41;50
+msgid "%"
+msgstr ""
+
+#: fontsize.admin.inc:24
+msgid "Minimum percentage the fontsize can be decreased."
+msgstr ""
+
+#: fontsize.admin.inc:29
+msgid "Maximum font size"
+msgstr ""
+
+#: fontsize.admin.inc:33
+msgid "Maximum percentage the fontsize can be increased."
+msgstr ""
+
+#: fontsize.admin.inc:38
+msgid "Default font size"
+msgstr ""
+
+#: fontsize.admin.inc:42
+msgid "Recommendation: Round up the CSS value <em>body { font-size: 81.25%; }</em> to the next higher integer (e.g. 83) to circumvent a rounding bug in Opera."
+msgstr ""
+
+#: fontsize.admin.inc:47
+msgid "Increases/decreases step"
+msgstr ""
+
+#: fontsize.admin.inc:51
+msgid "Percentage by which each click increases/decreases the font size."
+msgstr ""
+
+#: fontsize.admin.inc:56
+msgid "increase"
+msgstr ""
+
+#: fontsize.admin.inc:57
+msgid "reset"
+msgstr ""
+
+#: fontsize.admin.inc:58
+msgid "decrease"
+msgstr ""
+
+#: fontsize.admin.inc:68
+msgid "Properties for @name font size link"
+msgstr ""
+
+#: fontsize.admin.inc:75;77
+msgid "HTML to go before link"
+msgstr ""
+
+#: fontsize.admin.inc:81;83
+msgid "HTML to go inside anchor tag"
+msgstr ""
+
+#: fontsize.admin.inc:87;89
+msgid "HTML to go after link"
+msgstr ""
+
+#: fontsize.admin.inc:93
+msgid "Link title text"
+msgstr ""
+
+#: fontsize.admin.inc:102;104
+msgid "Name of ID field"
+msgstr ""
+
+#: fontsize.admin.inc:108;110
+msgid "Name of NAME field"
+msgstr ""
+
+#: fontsize.admin.inc:114;116
+msgid "Name of CLASS field"
+msgstr ""
+
+#: fontsize.admin.inc:120;122
+msgid "Accesskey attribute"
+msgstr ""
+
+#: fontsize.admin.inc:126;128
+msgid "OnMouseOver JavaScript"
+msgstr ""
+
+#: fontsize.admin.inc:132;134
+msgid "OnMouseOut JavaScript"
+msgstr ""
+
+#: fontsize.admin.inc:138;140
+msgid "OnFocus JavaScript"
+msgstr ""
+
+#: fontsize.admin.inc:160
+msgid "Cookie settings"
+msgstr ""
+
+#: fontsize.admin.inc:167
+msgid "Cookie name"
+msgstr ""
+
+#: fontsize.admin.inc:170
+msgid "The name of the fontsize cookie. Defaults to <em>@name</em>."
+msgstr ""
+
+#: fontsize.admin.inc:175
+msgid "Cookie expires"
+msgstr ""
+
+#: fontsize.admin.inc:178
+msgid "days"
+msgstr ""
+
+#: fontsize.admin.inc:179
+msgid "The cookie lifetime in days. Defaults to <em>365</em> days."
+msgstr ""
+
+#: fontsize.admin.inc:184
+msgid "Cookie path"
+msgstr ""
+
+#: fontsize.admin.inc:186
+msgid "The path the cookie is saved for. If you change default \"/\" the cookie cannot be read inside other directories."
+msgstr ""
+
+#: fontsize.admin.inc:191
+msgid "Cookie domain"
+msgstr ""
+
+#: fontsize.admin.inc:193
+msgid "If you need a domain cookie, enter \"<em>.example.com</em>\". A blank string defaults to current domain."
+msgstr ""
+
+#: fontsize.admin.inc:204
+msgid "Minimum font size setting should between 10-100."
+msgstr ""
+
+#: fontsize.admin.inc:207
+msgid "Maximum font size setting should between 10-500."
+msgstr ""
+
+#: fontsize.admin.inc:210
+msgid "Default font size setting should between 10-200."
+msgstr ""
+
+#: fontsize.admin.inc:213
+msgid "Increment/decreases steps value setting should between 1-50."
+msgstr ""
+
+#: fontsize.admin.inc:218
+msgid "Only use alphanumeric characters 0-9, A-Z or a-z for cookie name."
+msgstr ""
+
+#: fontsize.admin.inc:221
+msgid "Set the cookie livetime to 1-1000 days."
+msgstr ""
+
+#: fontsize.module:13;29 fontsize.info:0
+msgid "Display a font resizer on the page for better Web Accessibility."
+msgstr ""
+
+#: fontsize.module:52;153
+msgid "Please enable JavaScript"
+msgstr ""
+
+#: fontsize.module:56;28 fontsize.info:0
+msgid "Font size"
+msgstr ""
+
+#: fontsize.module:22
+msgid "administer fontsize"
+msgstr ""
+
+#: fontsize.module:22
+msgid "access fontsize"
+msgstr ""
+
+#: fontsize.module:0
+msgid "fontsize"
+msgstr ""
+
+#: fontsize.install:59
+msgid "Font size smaller"
+msgstr ""
+
+#: fontsize.install:60
+msgid "Reset font size"
+msgstr ""
+
+#: fontsize.install:61
+msgid "Font size bigger"
+msgstr ""
+

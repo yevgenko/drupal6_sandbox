@@ -1,0 +1,160 @@
+<?php
+// $Id: fontsize.module, 6.x-1.0 2008/03/01 00:00:00 hass Exp $
+
+/**
+ * This module is for Drupal 6.x
+ *
+ * Author: Alexander Hass
+ */
+
+function fontsize_help($path, $arg) {
+  switch ($path) {
+    case 'admin/modules#description':  // Displayed in admin/modules where modules are enabled/disabled
+      return t('Display a font resizer on the page for better Web Accessibility.');
+  }
+}
+
+/**
+ * Setup "administer" and "access" permissions. After you activate
+ * "access" permissions the hidden fontsize regions are available for themes.
+ */
+function fontsize_perm() {
+  return array('administer fontsize', 'access fontsize');
+}
+
+function fontsize_menu() {
+
+  $items['admin/settings/fontsize'] = array(
+    'title' => 'Font size',
+    'description' => 'Display a font resizer on the page for better Web Accessibility.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('fontsize_admin_settings_form'),
+    'access arguments' => array('administer fontsize'),
+    'file' => 'fontsize.admin.inc',
+    'type' => MENU_NORMAL_ITEM
+  );
+
+  return $items;
+}
+
+/**
+ * Adds a font size block
+ */
+function fontsize_block($op = 'list', $delta = 0) {
+
+  // build the JS init and links code
+  $content  = '<div class="fontsize">';
+  $content .= '<script type="text/javascript">';
+  // OLD $content .= 'if (efa_fontSize) efa_fontSize.efaInit();';
+  $content .= 'if (efa_fontSize) { efa_fontSize.efaInit(); } else { var efa_fontSize=new Efa_Fontsize(); efa_fontSize.efaInit(); }';
+  $content .= 'if (efa_fontSize) document.write(efa_fontSize.allLinks);';
+  $content .= '</script>';
+  $content .= '<noscript>'. t('Please enable JavaScript') .'</noscript>';
+  $content .= '</div>';
+
+  $blocks = array();
+  $title = array(t('Font size'));
+
+  switch ($op) {
+    case 'list':
+      $blocks[0]['info'] = $title[0];
+      $blocks[0]['cache'] = BLOCK_CACHE_GLOBAL;
+      break;
+
+    case 'view':
+      $blocks['subject'] = t($title[$delta]);
+      $blocks['content'] = $content;
+      break;
+  }
+  return $blocks;
+}
+
+function fontsize_init() {
+
+  // Add required CSS
+  drupal_add_css(drupal_get_path('module', 'fontsize') .'/fontsize.css', 'module', 'all');
+
+  // Add JS files
+  drupal_add_js(drupal_get_path('module', 'fontsize') .'/js/jquery.cookie.pack.js');
+  drupal_add_js(drupal_get_path('module', 'fontsize') .'/js/fontsize.js');
+
+  // Add JS settings
+  $cookie_properties = variable_get('fontsize_cookie', array());
+  $cookie_default = array(
+    'name' => 'fontsize',
+    'expires' => 365,
+    'path' => '/',
+    'domain' => ''
+  );
+  // Merge the variables and their default values
+  $cookie_properties = array_merge($cookie_default, $cookie_properties);
+
+  $settings = array('fontsize' => array(
+    'cookieName' => $cookie_properties['name'],
+    'cookieExpires' => $cookie_properties['expires'],
+    'cookiePath' => $cookie_properties['path'],
+    'cookieDomain' => $cookie_properties['domain'],
+    'min' => round(variable_get('fontsize_min', 62), 0),
+    'max' => round(variable_get('fontsize_max', 142), 0),
+    'def' => round(variable_get('fontsize_default', 82), 0),
+    'increment' => round(variable_get('fontsize_increment', 10), 0)
+  ));
+
+  // Create array of fontsize properties
+  $fontsizes = array(
+    'fontsize_bigger' => 'bigger',
+    'fontsize_reset' => 'reset',
+    'fontsize_smaller' => 'smaller'
+  );
+
+  foreach ($fontsizes as $key => $value) {
+    $fontsize_properties = variable_get($key, NULL);
+    $settings['fontsize'][$value] = array(
+      $fontsize_properties['beforeHTML'],
+      $fontsize_properties['insideHTML'],
+      t($fontsize_properties['title']),
+      $fontsize_properties['class'],
+      $fontsize_properties['id'],
+      $fontsize_properties['name'],
+      $fontsize_properties['accesskey'],
+      $fontsize_properties['onmouseover'],
+      $fontsize_properties['onmouseout'],
+      $fontsize_properties['onfocus'],
+      $fontsize_properties['afterHTML']
+    );
+  }
+  drupal_add_js($settings, 'setting');
+}
+
+/**
+ * Adds custom variables to a page. This requires some additional code in
+ * your Theme.
+ *
+ * In your page.tpl.php file, insert the following right after the <body> tag:
+ * <?php print $fontsize_init; ?>
+ *
+ * In your page.tpl.php file, insert the following where you wish the links
+ * to change the text size to appear:
+ * <?php print $fontsize_links; ?>
+ */
+function fontsize_preprocess_page(&$variables) {
+  if (user_access('access fontsize')) {
+
+    // Build INIT content
+    $content_init  = '<script type="text/javascript">';
+    $content_init .= 'if (efa_fontSize) { efa_fontSize.efaInit();} else { var efa_fontSize=new Efa_Fontsize(); efa_fontSize.efaInit(); }';
+    $content_init .= '</script>';
+  
+    // Build LINKS content
+    $content_links  = '<div class="fontsize">';
+    $content_links .= '<script type="text/javascript">';
+    $content_links .= 'if (efa_fontSize) document.write(efa_fontSize.allLinks);';
+    $content_links .= '</script>';
+    $content_links .= '<noscript>'. t('Please enable JavaScript') .'</noscript>';
+    $content_links .= '</div>';
+  
+    // Add variables to page
+    $variables['fontsize_init'] = $content_init;
+    $variables['fontsize_links'] = $content_links;
+  }
+}

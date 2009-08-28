@@ -1,0 +1,9 @@
+; $Id: fontsize.install, 6.x-1.0 2008/03/01 00:00:00 hass Exp $
+name = Font size
+description = Display a font resizer on the page for better Web Accessibility.
+project status url = "http://updates.yaml-fuer-drupal.de/release-history"
+
+version = "6.x-1.0"
+core = 6.x
+project = "fontsize"
+datestamp = "1204326000"

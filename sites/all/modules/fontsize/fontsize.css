@@ -1,0 +1,24 @@
+/**
+* Fontsize
+*
+* @copyright       Copyright 2006-2008, Alexander Hass
+* @license         GPL
+* @link            http://www.yaml-fuer-drupal.de/
+* @package         fontsize
+* @version         6.x-1.0
+* @lastmodified    2008/03/01
+*
+* (en) Description:
+* 1.  For the fontsize block this style should be correct.
+* 2.  If you are using the YAML for Drupal Theme, it's not required to edit this file.
+*     This style will be overwritten by themes/yaml/css/modifications/basemod.css settings.
+* 3.  For any other theme you should add the following styles to your theme style.css file.
+*/
+
+@media all
+{
+  .block-fontsize .fontsize { padding: 0; }
+  .block-fontsize .fontsize a { color: #334; }
+  .block-fontsize .fontsize a:hover { background: transparent; }
+  .block-fontsize .fontsize img { height: 1.2em; }
+}
