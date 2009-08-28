@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Vertical RTL list navigation "vlist"
+ * (de) Vertikale RTL Navigationsliste "vlist"
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+  .block-user h3, .block-menu h3 {
+    padding: 4px 10% 4px 0px;
+  }
+  
+  /* Submenu Level 1 */
+  ul.menu li {
+    float: right;
+  }
+  ul.menu li a {
+    padding: 3px 10% 3px 0px;
+  }
+  ul.menu li a.active {
+    padding: 3px 10% 3px 0px;
+  }
+
+  /* Submenu Level 2 */
+  ul.menu li ul li a {
+    padding: 3px 20% 3px 0px;
+  }
+  ul.menu li ul li a.active {
+    padding: 3px 20% 3px 0px;
+  }
+
+  /* Submenu Level 3 */
+  ul.menu li ul li ul li a {
+    padding: 3px 30% 3px 0px;
+  }
+  ul.menu li ul li ul li a.active {
+    padding: 3px 30% 3px 0px;
+  }
+
+  /* Submenu Level 4 */
+  ul.menu li ul li ul li ul li a {
+    padding: 3px 40% 3px 0px;
+  }
+  ul.menu li ul li ul li ul li a.active {
+    padding: 3px 40% 3px 0px;
+  }
+
+  /* Submenu - bullet toogle */
+  ul.menu li.expanded ul li.leaf a {
+    background-image: none;
+  }
+  ul.menu li.collapsed a {
+    background-position: 96.5%;
+  }
+  ul.menu li ul li.collapsed a {
+    background-position: 86.5%;
+  }
+  ul.menu li ul li ul li.collapsed a {
+    background-position: 76.5%;
+  }
+  ul.menu li.expanded a {
+    background-position: 96.5%;
+  }
+  ul.menu li ul li.expanded a {
+    background-position: 86.5%;
+  }
+  ul.menu li ul li ul li.expanded a {
+    background-position: 76.5%;
+  }
+
+}

@@ -1,0 +1,20 @@
+; $Id: yaml_3col_subcol.info,v 3.1.0.12 2009/06/07 00:00:00 hass Exp $
+name = YAML 3col_subcol
+description = Theme based on subcolumns
+project status url = "http://updates.yaml-fuer-drupal.de/release-history"
+
+base theme = yaml
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[bottom_left] = Left bottom
+regions[bottom_center] = Center bottom
+regions[bottom_right] = Right bottom
+regions[header] = Header
+regions[footer] = Footer
+
+version = "6.x-3.1.0.12"
+project = "yaml"
+core = 6.x
+engine = phptemplate
+datestamp = "1244325600"

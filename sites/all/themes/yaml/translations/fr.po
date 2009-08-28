@@ -1,0 +1,335 @@
+# French translation of yaml (6.x-3.0.6.9)
+# Copyright (c) 2008 by the French translation team
+# Generated from files:
+#  page.tpl.php,v 3.0.4.8 2008/02/28 00:00:00 hass
+#  theme-settings.inc,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  template.inc,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  yaml.info,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  yaml_2col_13.info,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  yaml_3col_standard.info,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  yaml_3col_subcol.info,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  yaml_1col.info,v 3.1.0.12 2009/06/07 00:00:00 hass
+#  yaml_2col_31.info,v 3.1.0.12 2009/06/07 00:00:00 hass
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: yaml (6.x-3.0.6.9)\n"
+"POT-Creation-Date: 2008-06-21 22:05+0200\n"
+"PO-Revision-Date: 2008-03-12 12:08+0100\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.tpl.php:23; layouts/yaml_1col/page.tpl.php:23; layouts/yaml_2col_13/page.tpl.php:23; layouts/yaml_2col_31/page.tpl.php:23; layouts/yaml_3col_standard/page.tpl.php:23; layouts/yaml_3col_subcol/page.tpl.php:23
+msgid "Skip to the navigation"
+msgstr "sauter à la navigation"
+
+#: page.tpl.php:24; layouts/yaml_1col/page.tpl.php:24; layouts/yaml_2col_13/page.tpl.php:24; layouts/yaml_2col_31/page.tpl.php:24; layouts/yaml_3col_standard/page.tpl.php:24; layouts/yaml_3col_subcol/page.tpl.php:24
+msgid "Skip to the content"
+msgstr "sauter au contenu"
+
+#: page.tpl.php:28,29; layouts/yaml_1col/page.tpl.php:28,29; layouts/yaml_2col_13/page.tpl.php:28,29; layouts/yaml_2col_31/page.tpl.php:28,29; layouts/yaml_3col_standard/page.tpl.php:28,29; layouts/yaml_3col_subcol/page.tpl.php:28,29
+msgid "Home"
+msgstr "Home"
+
+#: theme-settings.inc:73
+msgid "Layout"
+msgstr "Layout"
+
+#: theme-settings.inc:100
+msgid "Page min-width"
+msgstr "La longueur minimale de la page "
+
+#: theme-settings.inc:108
+msgid "Page max-width"
+msgstr "La longueur maximale de la page "
+
+#: theme-settings.inc:81
+msgid "Page alignment"
+msgstr "Alignement de la page"
+
+#: theme-settings.inc:84
+msgid "left"
+msgstr "à gauche"
+
+#: theme-settings.inc:85
+msgid "center"
+msgstr ""
+
+#: theme-settings.inc:86
+msgid "right"
+msgstr "à droite"
+
+#: theme-settings.inc:202
+msgid "Navigation"
+msgstr "Navigation"
+
+#: theme-settings.inc:208
+msgid "Menu containing primary links"
+msgstr "Menu contenant les liens primaires"
+
+#: theme-settings.inc:217
+msgid "Menu containing navigation links"
+msgstr ""
+
+#: theme-settings.inc:235
+msgid ""
+"Activates PNG transparency fix for filenames ending with "
+"\"_trans.png\" or images with CSS class \"_trans\" specified."
+msgstr ""
+
+#: theme-settings.inc:247
+msgid "Miscellaneous"
+msgstr "melangé"
+
+#: theme-settings.inc:262
+msgid "Display W3C XHTML validation link"
+msgstr ""
+
+#: theme-settings.inc:264
+msgid "Shows a W3C XHTML validation link in the footer of every page."
+msgstr "Montre un W3C XHTML lien de validation au bas de chaque page"
+
+#: theme-settings.inc:268
+msgid "Display W3C CSS validation link"
+msgstr "L'indication d'un W3C CSS lien de validation"
+
+#: theme-settings.inc:270
+msgid "Shows a W3C CSS validation link in the footer of every page."
+msgstr "Montre un W3C CSS lien de validation au bas de chaque page"
+
+#: theme-settings.inc:276
+msgid "Display YAML Framework link"
+msgstr ""
+
+#: theme-settings.inc:278
+msgid ""
+"This back linking maybe only removed, if you possess a YAML Framework "
+"license."
+msgstr ""
+
+#: theme-settings.inc:283
+msgid "Display YAML for Drupal link"
+msgstr ""
+
+#: theme-settings.inc:285
+msgid ""
+"This back linking maybe only removed, if you have possess a YAML for "
+"Drupal license."
+msgstr ""
+"Le référencement retour peut être eliminé avec une possession "
+"d’une licence YAML pour Drupal"
+
+#: template.inc:80
+msgid ""
+"<a href=\"http://validator.w3.org/check/referer\" title=\"Validate "
+"XHTML\">XHTML</a>"
+msgstr ""
+
+#: template.inc:84
+msgid ""
+"<a href=\"http://jigsaw.w3.org/css-validator/check/referer\" "
+"title=\"Validate CSS\">CSS</a>"
+msgstr ""
+
+#: template.inc:99
+msgid "Layout based on <a href=\"http://www.yaml.de/\">YAML</a>"
+msgstr "Layout basé sur <a href=\"http://www.yaml.de/\">YAML</a>"
+
+#: template.inc:114
+msgid ""
+"<a href=\"http://www.yaml-fuer-drupal.de/\" title=\"YAML for Drupal "
+"Theme\">YAML for Drupal</a> Theme"
+msgstr ""
+
+#: theme-settings.inc:76
+msgid ""
+"Leave the following defaults if you edit the basemod.ccs file "
+"directly. In this case there will be no extra inline settings added to "
+"the page by this configuration module."
+msgstr ""
+
+#: theme-settings.inc:88
+msgid "Align the page to right, center or left. Default: \"@default\"."
+msgstr ""
+"Aligne la page sur la gauche, le centre ou la droite. Standard : "
+"\"@default\"."
+
+#: theme-settings.inc:92
+msgid "Page width"
+msgstr "Longueur de la page"
+
+#: theme-settings.inc:94
+msgid ""
+"Defines the fixed page width in <em>px</em> or <em>em</em>. Default: "
+"\"@default\"."
+msgstr ""
+"Définit la longueur fixe de la page à <em>px</em> ou <em>em</em>. "
+"Standard: \"@default\"."
+
+#: theme-settings.inc:102
+msgid ""
+"Defines the minium page width in <em>px</em> or <em>em</em>. Default: "
+"\"@default\"."
+msgstr ""
+"Définit la longueur minimale de la page à <em>px</em> ou "
+"<em>em</em>. Standard: \"@default\"."
+
+#: theme-settings.inc:110
+msgid ""
+"Defines the maximum page width in <em>px</em> or <em>em</em>. Default: "
+"\"@default\"."
+msgstr ""
+"Définit la longueur maximale de la page à <em>px</em> ou "
+"<em>em</em>. Standard: \"@default\"."
+
+#: theme-settings.inc:120,150; yaml.info:0; layouts/yaml_2col_13/yaml_2col_13.info:0; layouts/yaml_3col_standard/yaml_3col_standard.info:0; layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Left sidebar"
+msgstr "Barre de gauche"
+
+#: theme-settings.inc:122,152,182
+msgid ""
+"Defines the left column width in <em>px</em>, <em>em</em> or "
+"<em>%</em>. Default: \"@default\"."
+msgstr ""
+"Définit  la longueur de la colonne gauche à <em>px</em>, <em>em</em> "
+"ou <em>%</em>. Standard: \"@default\"."
+
+#: theme-settings.inc:128,158,180; yaml.info:0; layouts/yaml_1col/yaml_1col.info:0; layouts/yaml_2col_13/yaml_2col_13.info:0; layouts/yaml_2col_31/yaml_2col_31.info:0; layouts/yaml_3col_standard/yaml_3col_standard.info:0; layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Content"
+msgstr "Contenu"
+
+#: theme-settings.inc:138,172; yaml.info:0; layouts/yaml_2col_31/yaml_2col_31.info:0; layouts/yaml_3col_standard/yaml_3col_standard.info:0; layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Right sidebar"
+msgstr "Barre de droite"
+
+#: theme-settings.inc:140,174
+msgid ""
+"Defines the right column width in <em>px</em>, <em>em</em> or "
+"<em>%</em>. Default: \"@default\"."
+msgstr ""
+"Définit la longueur de la colonne droite à <em>px</em>, <em>em</em> "
+"or <em>%</em>. Standard: \"@default\"."
+
+#: theme-settings.inc:195
+msgid "Graphic layout borders"
+msgstr ""
+
+#: theme-settings.inc:197
+msgid "Activates graphic borders around the page layout."
+msgstr ""
+
+#: theme-settings.inc:227
+msgid "Internet Explorer Special"
+msgstr "Internet Explorer spécial"
+
+#: theme-settings.inc:233
+msgid "PNG transparency"
+msgstr "PNG transparence"
+
+#: theme-settings.inc:239
+msgid "Simulate min-width / max-width"
+msgstr "Simuler la longueur minimale/maximale de la page"
+
+#: theme-settings.inc:241
+msgid ""
+"Simulate min-width / max-width for Internet Explorer by using "
+"JS-Expressions."
+msgstr ""
+"Simuler la longueur minimale/maximale de la page pour Internet "
+"Explorer avec JS-expressions"
+
+#: theme-settings.inc:279
+msgid ""
+"<strong>License and terms of use:</strong><br />The YAML Framework and "
+"YAML for Drupal are licensed under a <a href=\"@lic_cc\">Creative "
+"Commons</a> license. For more information see the following licenses "
+"and terms of use.</p><p>YAML Framework - <a "
+"href=\"@lic_yaml\">@lic_yaml</a><br />YAML for Drupal - <a "
+"href=\"@lic_yamlfd\">@lic_yamlfd</a>"
+msgstr ""
+"<strong>Licence et conditions d'utilisation:</strong><br />Le YAML "
+"Framework et YAML pour Drupal sont sous licence de<a "
+"href=\"@lic_cc\">Creative Commons</a>. Pour des informations "
+"supplémentaires lisez-vous les conditions d'utilisation "
+"suivantes.</p><p>YAML Framework - <a "
+"href=\"@lic_yaml\">@lic_yaml</a><br />YAML pour Drupal - <a "
+"href=\"@lic_yamlfd\">@lic_yamlfd</a>"
+
+#: theme-settings.inc:279
+msgid "http://creativecommons.org/licenses/by-nc-sa/2.0/"
+msgstr "http://creativecommons.org/licenses/by-nc-sa/2.0/deed.fr"
+
+#: theme-settings.inc:279
+msgid "http://www.yaml.de/en/license/license-conditions.html"
+msgstr "http://www.yaml.de/en/license/license-conditions.html"
+
+#: theme-settings.inc:279
+msgid "http://www.yaml-fuer-drupal.de/en/terms-of-use"
+msgstr "http://www.yaml-fuer-drupal.de/en/terms-of-use"
+
+#: yaml.info:0; layouts/yaml_1col/yaml_1col.info:0; layouts/yaml_2col_13/yaml_2col_13.info:0; layouts/yaml_2col_31/yaml_2col_31.info:0; layouts/yaml_3col_standard/yaml_3col_standard.info:0; layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Header"
+msgstr "Titre"
+
+#: yaml.info:0; layouts/yaml_1col/yaml_1col.info:0; layouts/yaml_2col_13/yaml_2col_13.info:0; layouts/yaml_2col_31/yaml_2col_31.info:0; layouts/yaml_3col_standard/yaml_3col_standard.info:0; layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Footer"
+msgstr "Pied"
+
+#: yaml.info:0
+msgid "YAML Admin"
+msgstr "administrateur"
+
+#: layouts/yaml_1col/yaml_1col.info:0
+msgid "YAML 1col"
+msgstr ""
+
+#: layouts/yaml_1col/yaml_1col.info:0
+msgid "Theme with 1 column"
+msgstr "sujet avec une colonne"
+
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+msgid "YAML 2col_13"
+msgstr ""
+
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+msgid "Theme with 2 columns and left sidebar"
+msgstr "sujet avec deux colonnes et une barre gauche"
+
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+msgid "YAML 2col_31"
+msgstr ""
+
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+msgid "Theme with 2 columns and right sidebar"
+msgstr "sujet avec deux colonnes et une barre droite"
+
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+msgid "YAML 3col_standard"
+msgstr ""
+
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+msgid "Theme with 3 columns, left and right sidebar"
+msgstr "sujet avec trois colonnes et une barre gauche et droite"
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "YAML 3col_subcol"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Theme based on subcolumns"
+msgstr "sujet basé sur des colonnes subordonnées"
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Left bottom"
+msgstr "le fond gauche"
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Center bottom"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Right bottom"
+msgstr "le fond droit"
+

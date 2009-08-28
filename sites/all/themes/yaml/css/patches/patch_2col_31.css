@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) IE-Patch stylesheet for "2col_31" layout
+ * (de) IE-Korrektur-Stylesheet für das Layout "2col_31"
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+/* Layout-dependent adjustments | Layout-abhängige Anpassungen --------------------------------------- */
+@media screen, projection
+{
+  /*-----------------------------------------------------------------------------------------------------*/
+
+  /**
+   * Bugfix for IE 3-Pixel-Jog Bug
+   *
+   * @bugfix
+   * @affected   IE 5.x/Win, IE6
+   * @css-for    IE 5.x/Win, IE6
+   * @valid      yes
+   */
+
+  * html #col3 { height: 1%; }
+  * html #col2 { margin-left: -3px; }
+  * html #col3 { margin-right: 24%; }
+
+  /*-----------------------------------------------------------------------------------------------------*/
+}

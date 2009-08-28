@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/**
+* "Yet Another Multicolumn Layout" for Drupal
+*
+* (en) RTL Global modification for the print layout
+* (de) RTL Globale-Modifikation für das Druck-Layout
+*
+* @copyright       Copyright 2006-2009, Alexander Hass
+* @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+* @link            http://www.yaml-for-drupal.com
+* @package         yaml-for-drupal
+* @version         6.x-3.1.0.12
+* @lastmodified    2009-06-07
+*/
+
+@media print
+{
+  /**
+   * (en) Layout boxes re-formating
+   * (de) Umformatierung der Layoutboxen
+   */
+  #header { padding: 25px 0px 1em 2em; }
+
+}

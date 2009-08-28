@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Variation of screen layout (basemod.css) for layout example "1col"
+ * (de) Variation des Screenlayouts (basemod.css) für Layoutbeispiel "1col"
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+  /**
+   * (en) Repositioning content container
+   * (de) Neupositionierung der Content Container
+   *
+   * |-------------------------------|
+   * | #header                       |
+   * |-------------------------------|
+   * | #col3                         |
+   * | flexible                      |
+   * |-------------------------------|
+   * | #footer                       |
+   * |-------------------------------|
+   */
+
+  /* hide left column | Linke Spalte abschalten */
+  #col1, #col1_content { display: none; }
+
+  /* hide right column | Rechte Spalte abschalten */
+  #col2, #col2_content { display: none; }
+
+  /* #col3 becomes main column | #col3 wird zur Inhaltsspalte  */
+  #col3 { margin-left: 0; margin-right: 0; }
+}

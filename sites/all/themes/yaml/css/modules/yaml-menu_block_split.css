@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Modification of menu_block_split style for the YAML for Drupal layout
+ * (de) Modifikation des menu_block_split Style für das YAML für Drupal Layout
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media all
+{
+
+  .block-menu_block_split {
+    width: 100%;
+    margin: 1.75em 0 1.5em 0;
+    padding: 0;
+    border-top: 2px #ddd solid;
+    border-bottom: 2px #ddd solid;
+  }
+
+}

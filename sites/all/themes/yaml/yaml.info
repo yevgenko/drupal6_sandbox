@@ -1,0 +1,17 @@
+; $Id: yaml.info,v 3.1.0.12 2009/06/07 00:00:00 hass Exp $
+name = YAML Admin
+description = Recommended multi-column administration theme
+project status url = "http://updates.yaml-fuer-drupal.de/release-history"
+
+; Add theme regions
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+
+version = "6.x-3.1.0.12"
+project = "yaml"
+core = 6.x
+engine = phptemplate
+datestamp = "1244325600"

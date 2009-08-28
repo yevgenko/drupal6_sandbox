@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Modification of Wysiwyg API style for the YAML for Drupal layout.
+ * (de) Modifikation des Wysiwyg API Style für das YAML für Drupal Layout.
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+/**
+ * Do not edit here | Hier nichts ändern - START
+ */
+@import url(../../yaml/core/base.pack.css);
+
+body {
+  background: #fff;
+  padding: 2px;
+  margin: 0;
+  border: 0;
+}
+body .subcolumns .subc,
+body .subcolumns .subcl,
+body .subcolumns .subcr {
+  border: #ccc 1px dashed; /* Subtemplates with border in Editor Mode */
+}
+
+/* Make scripts visible */
+body script {
+  display: block;
+  height: 16px;
+  width: 16px;
+  overflow: hidden; 
+  background: url(../../images/icons/script.gif) no-repeat;
+}
+
+/**
+ * Here you can edit/add | Hier kann geändert/erweitert werden
+ * CSS Classes for Editor | CSS Klassen für den Editor
+ */
+.float_left {
+  float: left;
+  display: inline;
+  margin-right: 1em;
+  margin-bottom: 0.15em;
+}
+.float_right {
+  float: right;
+  display: inline;
+  margin-left: 1em;
+  margin-bottom: 0.15em;
+}
+.center {
+  display: block;
+  text-align: center;
+  margin: 0.5em auto;
+}
+.dimmed { color: #888; }
+.highlight { color: #f60; }
+.info {
+  background: #f8f8f8;
+  color: #666;
+  padding: 10px;
+  margin-bottom: 0.5em;
+  font-size: 91.7%;
+}
+.important {
+  background: #ffe;
+  color: #440;
+  border: 2px #884 solid;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+.note {
+  background: #efe;
+  color: #040;
+  border: 2px #484 solid;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+.warning {
+  background: #fee;
+  color: #400;
+  border: 2px #844 solid;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+.framed {}
+.mono {}
+.download {}
+.disc {}
+.directory {}
+.file {}
+.floatbox {
+  background: url(../../images/icons/floatbox.gif);
+  border: 1px dotted #ccc;
+}
+.xhtml {}
+.css {}
+.bullet {}
+.imagelink {}

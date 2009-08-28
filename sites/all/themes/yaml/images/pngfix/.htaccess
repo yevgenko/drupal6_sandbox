@@ -1,0 +1,2 @@
+# This Apache setting is required for IE since Windows XP SP2
+AddType text/x-component .htc

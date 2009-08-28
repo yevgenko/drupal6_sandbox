@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) IE adjustment stylesheet for YAML vlist navigation
+ *      Import this file within the IE-patch-file if needed in your layout
+ *
+ * (de) IE Anpassungs-Stylesheet für YAML vlist-Navigation
+ *      Einbindung ins Layout erfolgt über den Import innerhalb des IE-Anspassungs-Stylesheet
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+  /**
+   * Box Model Bug
+   * (en) Adjustment of width values for list elements of the menu in IE 5.x/Win.
+   *      Note: If IE6 is running in quirks mode, it also needs 100% values!
+   *
+   * (de) Korrektur der Breitenangaben der Listenelemente des Submenüs im IE 5.x/Win.
+   *      Hinweis: Befindet sich der IE6 im Quirks Mode, so benötigt er ebenfalls 100%-Werte !
+   *
+   * @bugfix
+   * @affected   IE 5.x/Win (IE6 in Quirks-Mode)
+   * @css-for    IE 5.x/Win, IE6
+   * @valid      no
+   */
+
+  /* level 1 */
+  * html .block-user h3,
+  * html .block-user ul.menu li a,
+  * html .block-user ul.menu li a.active,
+  * html .block-menu h3,
+  * html .block-menu ul.menu li a,
+  * html .block-menu ul.menu li a.active { width: 100%; w\idth: 90%; }
+
+  /* level 2 */
+  * html .block-user ul.menu li ul li a,
+  * html .block-user ul.menu li ul li a.active,
+  * html .block-menu ul.menu li ul li a,
+  * html .block-menu ul.menu li ul li a.active { width: 100%; w\idth: 80%; }
+
+  /* level 3 */
+  * html .block-user ul.menu li ul li ul li a,
+  * html .block-user ul.menu li ul li ul li a.active,
+  * html .block-menu ul.menu li ul li ul li a,
+  * html .block-menu ul.menu li ul li ul li a.active { width: 100%; w\idth: 70%; }
+
+  /* level 4 */
+  * html .block-user ul.menu li ul li ul li ul li a,
+  * html .block-user ul.menu li ul li ul li ul li a.active,
+  * html .block-menu ul.menu li ul li ul li ul li a,
+  * html .block-menu ul.menu li ul li ul li ul li a.active { width: 100%; w\idth: 60%; }
+
+}

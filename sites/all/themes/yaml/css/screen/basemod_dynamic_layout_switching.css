@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Variation of screen layout (basemod.css) - graphical backgrounds "3col_faux_columns"
+ * (de) Variation des Screenlayouts (basemod.css) - Grafische Spaltenhintergründe "3col_faux_columns"
+ *
+ * @copyright       Copyright 2005-2009, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml-for-drupal-customized
+ * @version         3.1
+ * @revision        $Revision: 308 $
+ * @lastmodified    $Date: 2008-12-18 22:02:13 +0100 (Do, 18. Dez 2008) $
+ */
+
+@media screen, projection
+{
+
+ /**
+  * @section generic classes for layout switching | Generische Klassen zur Layoutumschaltung
+  * @see     http://www.yaml.de/en/documentation/practice/basic-variations.html
+  *
+  * .hidecol1 -> 2-column-layout (using #col2 and #col3)
+  * .hidecol2 -> 2-column-layout (using #col1 and #col3)
+  * .hideboth -> single-column-layout (using #col3)
+  */
+
+  .hideboth #col3 { margin-left: 0; margin-right: 0; }
+  .hideboth #col3_content { padding-left: 10px; padding-right: 10px; }
+
+  .hidecol1 #col3 { margin-left: 0; margin-right: 25%; }
+  .hidecol1 #col3_content{ padding-left: 10px; }
+
+  .hidecol2 #col3 { margin-left: 25%; margin-right: 0; }
+  .hidecol2 #col3_content{ padding-right: 10px; }
+
+  .hideboth #col1, .hideboth #col2, .hidecol1 #col1, .hidecol2 #col2 { display:none; }
+  
+}

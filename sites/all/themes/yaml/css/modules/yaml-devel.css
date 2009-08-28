@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Modification of devel style for the YAML for Drupal layout.
+ * (de) Modifikation des Devel Style für das YAML für Drupal Layout.
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media all
+{
+
+  .dev-query {
+    margin-top: 1em;
+  }
+
+  .dev-query,
+  .devel-querylog,
+  .dev-timer,
+  .dev-memory-usage,
+  .krumo-root {
+    text-align: left;
+  }
+
+  div.devel-querylog div.cell {
+    padding: .5em .7em;
+  }
+
+  .dev-memory-usage {
+    margin-top: 0;
+    background-color: #fff;
+    padding: .5em .7em;
+  }
+
+}

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) RTL Drupal specific screen layout for YAML examples
+ * (de) RTL Drupal spezifisches Bildschirmlayout für YAML-Beispiele
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting Drupal specific elements
+   * (de) Gestaltung der Drupal spezifischen Elemente
+   */
+
+  #site-logo {
+    float: right;
+    margin: -25px 0 0 15px;
+  }
+  #site-name {
+    padding: 0px 30px 0px 0px;
+  }
+  #site-slogan {
+    padding: 0px 30px 0px 0px;
+  }
+
+  /* TODO: optimize position */
+  #search {
+    left: 5px;
+    right: auto; /* Reset LTR */
+  }
+
+  /* Position the yellow region box, only visible in block configuration */
+  #header .block-region {
+    text-align: right;
+    left: auto; /* reset LTR */
+    right: 10px;
+  }
+
+  /**
+   * (en) Formatting the navigation
+   * (de) Gestaltung der Navigation
+   */
+
+  #nav-bar .breadcrumb {
+    float: right;
+    padding: .4em 1em .4em 0;
+  }
+
+  #nav-bar .fontsize {
+    float: left;
+    padding: 0.4em 0 0.4em 1em;
+  }
+
+  /**
+   * (en) Fontpage mission formating
+   * (de) Formatierung der Mission der Startseite
+   */
+
+  /* TODO Layout object!? */
+  #mission div {
+    float: right;
+    margin-right: 0; /* Reset LTR */
+    margin-left: 1em;
+  }
+
+  /**
+   * (en) Content formating
+   * (de) Formatierung der Inhalte
+   */
+
+  .node .picture,
+  .comment .picture {
+    float: right;
+    margin: 0.3em 0 0.15em 0.6em;
+  }
+
+  .item-list ul li {
+    margin-left: 0; /* Reset LTR */
+    padding-left: 0; /* Reset LTR */
+    margin-right: .25em;
+    padding-right: 1.25em;
+    background: transparent url(../navigation/images/vlist/arrow/menu-leaf.gif) no-repeat 1px .35em; /* TODO position? */
+  }
+
+  /**
+   * Login Block
+   */
+  #user-login-form ul {
+    text-align: right;
+  }
+
+  /**
+   * (en) Fieldset formating
+   * (de) Formatierung der Fieldsets
+   */
+
+  html.js fieldset.collapsible legend a {
+    padding-left: 0; /* Reset LTR */
+    padding-right: 1.4em;
+    background-position: 100%; /* Reset LTR */
+  }
+  html.js fieldset.collapsed legend a {
+    background: url(../navigation/images/vlist/arrow/menu-collapsed-rtl.gif) no-repeat 100% 50%;
+  }
+
+  /**
+   * (en) Theme settings page
+   * (de) Theme-Einstellungen page
+   */
+
+  #theme-settings-layout input {
+    text-align: left;
+  }
+
+
+  /* START: TABS RTL workaround - should be in core!!! */
+  .tabs ul.primary {
+    padding: 0 10px 4px 0;
+    height: 1.2em; /* FF hack, see float below */
+    line-height: 1em; /* FF hack, see float below */
+  }
+  /* @begin FF hacks, copied from wikipedia */
+  .tabs ul { clear: right; }
+  .tabs li {
+    /* padding: 0 10px; */
+    float: right;
+  }
+  /* @end FF hacks */
+  
+  .tabs ul.primary li a {
+    margin-right: 0.5em;
+  }
+  /* END: TABS RTL workaround - should be in core!!! */  
+
+}

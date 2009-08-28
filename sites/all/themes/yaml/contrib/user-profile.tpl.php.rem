@@ -1,0 +1,17 @@
+<?php
+// $Id: user-profile.tpl.php,v 3.1.0.12 2009/06/07 00:00:00 hass Exp $
+?>
+<?php if ($user->picture) { print theme('user_picture', $user); }?>
+<?php if ($user->profile_country || $user->profile_country || $user->profile_postcode) { ?>
+<div class="custom_profiles">
+  <?php if ($user->profile_country) { ?>
+  <div class="fields">City: <?php print check_plain($user->profile_country); ?></div>
+  <?php }?>
+  <?php if ($user->profile_country) { ?>
+  <div class="fields">Country: <?php print check_plain($user->profile_country) ;?></div>
+  <?php }?>
+  <?php if ($user->profile_postcode) { ?>
+  <div class="fields">Postcode: <?php print check_plain($user->profile_postcode); ?></div>
+  <?php }?>
+</div>
+<?php }?>

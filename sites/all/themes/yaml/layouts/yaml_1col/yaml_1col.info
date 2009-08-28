@@ -1,0 +1,15 @@
+; $Id: yaml_1col.info,v 3.1.0.12 2009/06/07 00:00:00 hass Exp $
+name = YAML 1col
+description = Theme with 1 column
+project status url = "http://updates.yaml-fuer-drupal.de/release-history"
+
+base theme = yaml
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer
+
+version = "6.x-3.1.0.12"
+project = "yaml"
+core = 6.x
+engine = phptemplate
+datestamp = "1244325600"

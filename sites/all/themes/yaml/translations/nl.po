@@ -1,0 +1,330 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# No version information was available in the source files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: YAML for Drupal - Dutch\n"
+"POT-Creation-Date: 2008-06-21 19:58+0100\n"
+"PO-Revision-Date: 2008-06-21 20:00+0100\n"
+"Last-Translator: Alexander Hass\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: page.tpl.php:21;21
+#: layouts/yaml_1col/page.tpl.php:21;21
+#: layouts/yaml_2col_13/page.tpl.php:21;21
+#: layouts/yaml_2col_31/page.tpl.php:21;21
+#: layouts/yaml_3col_standard/page.tpl.php:21;21
+#: layouts/yaml_3col_subcol/page.tpl.php:21;21
+msgid "Skip to the navigation"
+msgstr ""
+
+#: page.tpl.php:22;22
+#: layouts/yaml_1col/page.tpl.php:22;22
+#: layouts/yaml_2col_13/page.tpl.php:22;22
+#: layouts/yaml_2col_31/page.tpl.php:22;22
+#: layouts/yaml_3col_standard/page.tpl.php:22;22
+#: layouts/yaml_3col_subcol/page.tpl.php:22;22
+msgid "Skip to the content"
+msgstr ""
+
+#: page.tpl.php:26;26;27
+#: layouts/yaml_1col/page.tpl.php:26;26;27
+#: layouts/yaml_2col_13/page.tpl.php:26;26;27
+#: layouts/yaml_2col_31/page.tpl.php:26;26;27
+#: layouts/yaml_3col_standard/page.tpl.php:26;26;27
+#: layouts/yaml_3col_subcol/page.tpl.php:26;26;27
+msgid "Home"
+msgstr "Start"
+
+#: template.inc:115
+msgid "<a href=\"http://validator.w3.org/check/referer\" title=\"Validate XHTML\">XHTML</a>"
+msgstr ""
+
+#: template.inc:119
+msgid "<a href=\"http://jigsaw.w3.org/css-validator/check/referer\" title=\"Validate CSS\">CSS</a>"
+msgstr ""
+
+#: template.inc:134
+msgid "Layout based on <a href=\"http://www.yaml.de/\">YAML</a>"
+msgstr ""
+
+#: template.inc:149
+msgid "<a href=\"http://www.yaml-fuer-drupal.de/\" title=\"YAML for Drupal Theme\">YAML for Drupal</a> Theme"
+msgstr ""
+
+#: theme-settings.inc:71
+msgid "Layout"
+msgstr ""
+
+#: theme-settings.inc:74
+msgid "Leave the following defaults if you edit the basemod.ccs file directly. In this case there will be no extra inline settings added to the page by this configuration module."
+msgstr ""
+
+#: theme-settings.inc:79
+msgid "Page alignment"
+msgstr ""
+
+#: theme-settings.inc:82
+msgid "left"
+msgstr ""
+
+#: theme-settings.inc:83
+msgid "center"
+msgstr ""
+
+#: theme-settings.inc:84
+msgid "right"
+msgstr ""
+
+#: theme-settings.inc:86
+msgid "Align the page to right, center or left. Default: \"@default\"."
+msgstr ""
+
+#: theme-settings.inc:90
+msgid "Page width"
+msgstr ""
+
+#: theme-settings.inc:92
+msgid "Defines the fixed page width in <em>px</em> or <em>em</em>. Default: \"@default\"."
+msgstr ""
+
+#: theme-settings.inc:98
+msgid "Page min-width"
+msgstr ""
+
+#: theme-settings.inc:100
+msgid "Defines the minium page width in <em>px</em> or <em>em</em>. Default: \"@default\"."
+msgstr ""
+
+#: theme-settings.inc:106
+msgid "Page max-width"
+msgstr ""
+
+#: theme-settings.inc:108
+msgid "Defines the maximum page width in <em>px</em> or <em>em</em>. Default: \"@default\"."
+msgstr ""
+
+#: theme-settings.inc:118;148
+#: yaml.info:0
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Left sidebar"
+msgstr "Linker zijbalk"
+
+#: theme-settings.inc:120;150;180
+msgid "Defines the left column width in <em>px</em>, <em>em</em> or <em>%</em>. Default: \"@default\"."
+msgstr ""
+
+#: theme-settings.inc:126;156;178
+#: yaml.info:0
+#: layouts/yaml_1col/yaml_1col.info:0
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Content"
+msgstr "Inhoud"
+
+#: theme-settings.inc:136;170
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Right sidebar"
+msgstr "Rechter zijbalk"
+
+#: theme-settings.inc:138;172
+msgid "Defines the right column width in <em>px</em>, <em>em</em> or <em>%</em>. Default: \"@default\"."
+msgstr ""
+
+#: theme-settings.inc:193
+msgid "Graphic layout borders"
+msgstr ""
+
+#: theme-settings.inc:195
+msgid "Activates graphic borders around the page layout."
+msgstr ""
+
+#: theme-settings.inc:200
+msgid "Navigation"
+msgstr "Navigatie"
+
+#: theme-settings.inc:206
+msgid "Menu containing primary links"
+msgstr "Menu dat primaire links bevat"
+
+#: theme-settings.inc:215
+msgid "Menu containing navigation links"
+msgstr ""
+
+#: theme-settings.inc:225
+msgid "Internet Explorer Special"
+msgstr ""
+
+#: theme-settings.inc:231
+msgid "PNG transparency"
+msgstr ""
+
+#: theme-settings.inc:233
+msgid "Activates PNG transparency fix for filenames ending with \"_trans.png\" or images with CSS class \"_trans\" specified."
+msgstr ""
+
+#: theme-settings.inc:237
+msgid "Simulate min-width / max-width"
+msgstr ""
+
+#: theme-settings.inc:239
+msgid "Simulate min-width / max-width for Internet Explorer by using JS-Expressions."
+msgstr ""
+
+#: theme-settings.inc:245
+msgid "Miscellaneous"
+msgstr ""
+
+#: theme-settings.inc:260
+msgid "Display W3C XHTML validation link"
+msgstr ""
+
+#: theme-settings.inc:262
+msgid "Shows a W3C XHTML validation link in the footer of every page."
+msgstr ""
+
+#: theme-settings.inc:266
+msgid "Display W3C CSS validation link"
+msgstr ""
+
+#: theme-settings.inc:268
+msgid "Shows a W3C CSS validation link in the footer of every page."
+msgstr ""
+
+#: theme-settings.inc:274
+msgid "Display YAML Framework link"
+msgstr ""
+
+#: theme-settings.inc:276
+msgid "This back linking maybe only removed, if you possess a YAML Framework license."
+msgstr ""
+
+#: theme-settings.inc:277
+msgid "<strong>License and terms of use:</strong><br />The YAML Framework and YAML for Drupal are licensed under a <a href=\"@lic_cc\">Creative Commons</a> license. For more information see the following licenses and terms of use.</p><p>YAML Framework - <a href=\"@lic_yaml\">@lic_yaml</a><br />YAML for Drupal - <a href=\"@lic_yamlfd\">@lic_yamlfd</a>"
+msgstr ""
+
+#: theme-settings.inc:277
+msgid "http://creativecommons.org/licenses/by-nc-sa/2.0/"
+msgstr ""
+
+#: theme-settings.inc:277
+msgid "http://www.yaml.de/en/license/license-conditions.html"
+msgstr ""
+
+#: theme-settings.inc:277
+msgid "http://www.yaml-fuer-drupal.de/en/terms-of-use"
+msgstr ""
+
+#: theme-settings.inc:281
+msgid "Display YAML for Drupal link"
+msgstr ""
+
+#: theme-settings.inc:283
+msgid "This back linking maybe only removed, if you have possess a YAML for Drupal license."
+msgstr ""
+
+#: yaml.info:0
+msgid "YAML Admin"
+msgstr ""
+
+#: yaml.info:0
+msgid "Recommended administration theme with 2 columns and left sidebar"
+msgstr ""
+
+#: yaml.info:0
+#: layouts/yaml_1col/yaml_1col.info:0
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Header"
+msgstr "Kop"
+
+#: yaml.info:0
+#: layouts/yaml_1col/yaml_1col.info:0
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Footer"
+msgstr "voet"
+
+#: layouts/yaml_1col/yaml_1col.info:0
+msgid "YAML 1col"
+msgstr ""
+
+#: layouts/yaml_1col/yaml_1col.info:0
+msgid "Theme with 1 column"
+msgstr ""
+
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+msgid "YAML 2col_13"
+msgstr ""
+
+#: layouts/yaml_2col_13/yaml_2col_13.info:0
+msgid "Theme with 2 columns and left sidebar"
+msgstr ""
+
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+msgid "YAML 2col_31"
+msgstr ""
+
+#: layouts/yaml_2col_31/yaml_2col_31.info:0
+msgid "Theme with 2 columns and right sidebar"
+msgstr ""
+
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+msgid "YAML 3col_standard"
+msgstr ""
+
+#: layouts/yaml_3col_standard/yaml_3col_standard.info:0
+msgid "Theme with 3 columns, left and right sidebar"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "YAML 3col_subcol"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Theme based on subcolumns"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Left bottom"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Center bottom"
+msgstr ""
+
+#: layouts/yaml_3col_subcol/yaml_3col_subcol.info:0
+msgid "Right bottom"
+msgstr ""
+
+#~ msgid "left sidebar"
+#~ msgstr "linker zijbalk"
+#~ msgid "content"
+#~ msgstr "inhoud"
+#~ msgid "Search..."
+#~ msgstr "Zoeken..."
+#~ msgid "Enter the terms you wish to search for."
+#~ msgstr "Geef de woorden op waarnaar u wilt zoeken."
+#~ msgid "right sidebar"
+#~ msgstr "rechter zijbalk"
+

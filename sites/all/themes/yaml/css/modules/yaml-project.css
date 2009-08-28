@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Modification of project style for the YAML for Drupal layout
+ * (de) Modifikation des project Style für das YAML für Drupal Layout
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media all
+{
+
+  ul.project-terms li {
+    padding-left: 1.5em;
+    list-style-type: none;
+    list-style-image: none;
+    background: transparent url(../navigation/images/vlist/arrow/menu-leaf.gif) no-repeat 1px .35em;
+  }
+
+  /* Overwrite buggy project.css settings */
+  .project .links {
+    font-size: 1em;
+  }
+  .project .author {
+    font-size: 1em;
+  }
+
+  .project td {
+    padding: 0.3em 0.5em;
+  }
+
+  #project-overview .even,
+  #project-overview .odd {
+    padding-top: 1em;
+  }
+
+}

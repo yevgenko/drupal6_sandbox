@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Modification of service_links style for the YAML for Drupal layout
+ * (de) Modifikation des service_links Style für das YAML für Drupal Layout
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media all
+{
+
+  /* remove external link icon */
+  .service-links a[href^="http:"],
+  .service-links a[href^="https:"] {
+    background: none;
+    padding-left: 0;
+  }
+
+  .service-links ul.links {
+    padding-top: .2em;
+  }
+
+  .service-links ul.links li {
+    padding: 0 .1em;
+  }
+
+}
+
+@media print
+{
+  /* make service links invisible */
+  .service-links { display: none; }
+}

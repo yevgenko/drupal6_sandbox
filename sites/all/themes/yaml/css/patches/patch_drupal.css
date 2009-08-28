@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) IE-Patch stylesheet for Drupal
+ * (de) IE-Korrektur-Stylesheet für Drupal
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+
+  /**
+   * (en) Correct some Drupal settings for IE
+   * (de) Einige Drupal-Einstellungen für den IE korrigieren
+   *
+   * @workaround
+   * @affected   IE 5.x/Win, IE6
+   * @css-for    IE 5.x/Win, IE6
+   */
+
+  fieldset {
+    background: none; /* Don't draw backgrounds on fieldsets in IE, as they look really bad. */
+  }
+  fieldset legend {
+    display: inline-block; /* Fix legend width in IE */
+  }
+
+  /* Prevent fieldsets from shifting when changing collapsed state. */
+  html.js fieldset.collapsible {
+    position: relative;
+    top: -1em;
+  }
+  html.js fieldset.collapsed {
+    top: 0;
+    margin-bottom: 1em;
+  }
+
+  /**
+   * (en) Some options in block configuration are not reachable in some themes. This problem
+   *      often occours in fixed layouts with 3 columns and this is hereby solved with horizontal
+   *      scrollbars.
+   *
+   * (de) Teilweise sind Optionen in der Blockkonfiguration mancher Themes nicht erreichbar.
+   *      Dieses Problem tritt speziell bei fixen Layouts mit 3 Spalten auf und wird hiermit
+   *      durch horizontale Scrollbalken gelöst.
+   */
+  * html #block-admin-display-form,
+  * html #system-themes-form,
+  * html #user-admin-perm {
+    overflow-x: auto;
+    overflow-y: visible;
+    padding-bottom: 20px;
+  }
+
+  /* Use at own risk */
+  /* tr.even td,
+  tr.odd td,
+  tbody th td {
+    border: solid #d3e7f4;
+    border-width: 1px 0;
+  } */
+
+  td.menu-disabled {
+    filter: alpha(opacity=40); /* Use alpha filter to emulate CSS3 opacity */
+  }
+
+  /* Fading elements in IE causes the text to bleed unless they have a background. */
+  #attach-hide label,
+  #uploadprogress div.message {
+    background-color: #fff;
+  }
+
+  /*******************************************************************
+   * Color Module: Don't touch                                       *
+   *******************************************************************/
+
+  /**
+   * Status report colors.
+   */
+  table.system-status-report tr.error td {
+    background-color: #fcc;
+    border-color: #ebb;
+    color: #200;
+  }
+  table.system-status-report tr.warning td {
+    background-color: #ffd;
+    border-color: #eeb;
+  }
+  table.system-status-report tr.ok td {
+    background-color: #dfd;
+    border-color: #beb;
+  }
+  table.system-status-report tr.info td {
+    border-bottom-color: #ccc;
+  }
+
+}

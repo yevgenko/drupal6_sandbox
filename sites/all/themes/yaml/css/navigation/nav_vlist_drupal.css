@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Vertical list navigation "vlist"
+ * (de) Vertikale Navigationsliste "vlist"
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+
+  /* Submenu Titel */
+  .block-user, .block-menu {
+    width: 100%;
+    margin: 1.75em 0 1.5em 0;
+    padding: 0;
+    border-top: 2px #ddd solid;
+    border-bottom: 2px #ddd solid;
+  }
+
+  .block-user h3, .block-menu h3 {
+    width: 90%;
+    overflow: hidden;      /* Fix: required for IE 5.x */
+    margin: 0;
+    padding: 4px 0px 4px 10%;
+    font-size: 133.33%;
+    font-weight: bold;
+    color: #444;
+    background-color: #fff;
+    border-bottom: 4px #888 solid;
+  }
+
+  /* Submenu Block */
+  ul.menu {
+    width: 100%;
+    overflow: hidden;       /* Fix: required for IE 5.x */
+    margin: 0;              /* Fix: submenu titel - workaround for Drupal menu system */
+    padding: 0;             /* overwrite drupal.css setting ".block ul" */
+    list-style-type: none;
+    border: 0 none;         /* Fix: remove border between block title and menu */
+  }
+
+  /* Submenu Level 1 */
+  ul.menu a {
+    display: block;
+    text-decoration: none;
+  }
+  ul.menu li {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    clear: both;            /* IE 5.0 Guillotine-Bugfix */
+  }
+  ul.menu li a {
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    background-color: #fff;
+    color: #444;
+    border-bottom: 1px #eee solid;
+  }
+  ul.menu li a:hover {
+    background-color: #f63;
+    color: #fff;
+    text-decoration: none;
+  }
+  ul.menu li a.active {
+    width: 90%;
+    padding: 3px 0px 3px 10%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #aab;
+    border-bottom: 1px #eee solid;
+  }
+
+  /* Submenu Level 2 */
+  ul.menu li ul li a {
+    width: 80%;
+    padding: 3px 0px 3px 20%;
+    background-color: #f8f8f8;
+    color: #666;
+    border-bottom: 1px #ddd solid;
+  }
+  ul.menu li ul li a.active {
+    width: 80%;
+    padding: 3px 0px 3px 20%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #aab;
+    border-bottom: 1px #fff solid;
+  }
+
+  /* Submenu Level 3 */
+  ul.menu li ul li ul li a {
+    width: 70%;
+    padding: 3px 0px 3px 30%;
+    background-color: #e9e9e9;
+    color: #666;
+    border-bottom: 1px #ddd solid;
+  }
+  ul.menu li ul li ul li a.active {
+    width: 70%;
+    padding: 3px 0px 3px 30%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #aab;
+    border-bottom: 1px #fff solid;
+  }
+
+  /* Submenu Level 4 */
+  ul.menu li ul li ul li ul li a {
+    width: 60%;
+    padding: 3px 0px 3px 40%;
+    background-color: #e9e9e9;
+    color: #666;
+    border-bottom: 1px #ddd solid;
+  }
+  ul.menu li ul li ul li ul li a.active {
+    width: 60%;
+    padding: 3px 0px 3px 40%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #aab;
+    border-bottom: 1px #fff solid;
+  }
+
+  /* Drupal submenu item configuration */
+  ul.menu li.leaf {
+    display: block;
+    background-color: #f4f4f4;
+    color: #444;
+    font-weight: normal;
+  }
+  ul.menu li.collapsed {
+    display: block;
+    background-color: #f4f4f4;
+    color: #444;
+    font-weight: normal;
+  }
+  ul.menu li.expanded {
+    display: block;
+    background-color: #f4f4f4;
+    color: #444;
+    font-weight: bold;
+  }
+
+  /* Submenu - bullet toogle */
+  ul.menu li.expanded ul li.leaf a {
+    background-image: none;
+  }
+  ul.menu li.collapsed a {
+    background-image: url(images/vlist/square/menu-collapsed.gif);
+    background-position: 4%;
+    background-repeat: no-repeat;
+  }
+  ul.menu li ul li.collapsed a {
+    background-image: url(images/vlist/square/menu-collapsed.gif);
+    background-position: 14%;
+    background-repeat: no-repeat;
+  }
+  ul.menu li ul li ul li.collapsed a {
+    background-image: url(images/vlist/square/menu-collapsed.gif);
+    background-position: 24%;
+    background-repeat: no-repeat;
+  }
+  ul.menu li.expanded a {
+    background-image: url(images/vlist/square/menu-expanded.gif);
+    background-position: 4%;
+    background-repeat: no-repeat;
+  }
+  ul.menu li ul li.expanded a {
+    background-image: url(images/vlist/square/menu-expanded.gif);
+    background-position: 14%;
+    background-repeat: no-repeat;
+  }
+  ul.menu li ul li ul li.expanded a {
+    background-image: url(images/vlist/square/menu-expanded.gif);
+    background-position: 24%;
+    background-repeat: no-repeat;
+  }
+
+}

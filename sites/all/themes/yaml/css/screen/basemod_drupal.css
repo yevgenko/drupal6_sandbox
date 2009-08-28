@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" for Drupal
+ *
+ * (en) Drupal specific screen layout for YAML examples
+ * (de) Drupal spezifisches Bildschirmlayout für YAML-Beispiele
+ *
+ * @copyright       Copyright 2006-2009, Alexander Hass
+ * @license         http://www.yaml-fuer-drupal.de/en/terms-of-use
+ * @link            http://www.yaml-for-drupal.com
+ * @package         yaml-for-drupal
+ * @version         6.x-3.1.0.12
+ * @lastmodified    2009-06-07
+ */
+
+@media screen, projection
+{
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting Drupal specific elements
+   * (de) Gestaltung der Drupal spezifischen Elemente
+   */
+
+  #header {
+    height: 85px;
+    clear: left;  /* Float Bugfix for Opera */
+  }
+  #header a { background-color: transparent; }
+  #site-logo {
+    float: left; /* RTL */
+    margin: -25px 15px 0 0;
+  }
+  #site-name {
+    padding: 0px 0px 0px 30px;
+    white-space: nowrap;
+  }
+  #site-name a {
+    line-height: 65%;
+    letter-spacing: -1px;
+    color: #000;
+    text-decoration: none;
+  }
+  #site-slogan {
+    padding: 0px 0px 0px 30px;
+    color:#999;
+  }
+
+  /* TODO: optimize position */
+  #search {
+    position: absolute;
+    right: 5px; /* RTL */
+    top: 115px;
+  }
+
+  /* Position the yellow region box, only visible in block configuration */
+  #header .block-region {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* RTL */
+    margin-top: 0;
+    text-align: left;
+  }
+
+  /**
+   * (en) Formatting the navigation
+   * (de) Gestaltung der Navigation
+   */
+
+  #nav-bar {
+    clear: both;
+    width: auto;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    font-size: 83.33%; /* 10px */
+    height: 2.2em; /* fixes collapsing block - if no content */
+  }
+  #nav-bar .breadcrumb {
+    float: left; /* RTL */
+    padding: .4em 0 .4em 1em;
+  }
+  #nav-bar .breadcrumb a { color: #334; }
+  #nav-bar .breadcrumb a:hover {
+    color: #334;
+    background: transparent;
+  }
+
+  #nav-bar .fontsize {
+    float: right; /* RTL */
+    padding: 0.4em 1em 0.4em 0;
+  }
+  #nav-bar .fontsize a { color: #334; }
+  #nav-bar .fontsize a:hover { background: transparent; }
+  #nav-bar .fontsize img { height: 1.45em; }
+
+  /* #footer {
+    background: #edf5fa none repeat scroll 0%;
+    border-top: 5px solid #d3e7f4;
+  } */
+
+  /* Overwrite Drupal Tabs - system.css */
+  ul.primary li a {
+    background-color: #fff;
+    color: #444;
+    text-decoration: none;
+  }
+  ul.primary li a.active {
+    background-color: #aab;
+    color: #fff;
+  }
+  ul.primary li a:hover {
+    background-color: #f63;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* (en) Pager navigation bottom */
+  /* (de) Pager Navigation unten */
+  .item-list ul.pager {
+    margin-top: 0.5em;
+  }
+  .item-list .pager li {
+    padding: 2px 5px;
+    border: 1px solid #aab;
+  }
+  .item-list .pager li.pager-current,
+  .item-list .pager li.pager-current:hover {
+    background-color: #aab;
+    color: #fff;
+  }
+  /* TODO: Add IE bugfixes/compatibility */
+  .item-list .pager li:hover,
+  .item-list .pager li:hover a {
+    background-color: #f63;
+    color: #fff;
+    text-decoration: none;
+  }
+  .item-list .pager li.pager-ellipsis,
+  .item-list .pager li.pager-ellipsis:hover {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #444;
+  }
+
+  /**
+   * (en) Fontpage mission formating
+   * (de) Formatierung der Mission der Startseite
+   */
+
+  #mission {
+    margin: 0em 1em 1em 1em;
+    background: #f4f4f4;
+    border-bottom: 1px #ccc solid;
+    padding: 0.8em;
+    color: #5f5d75;
+  }
+  #mission div {
+    float: left; /* RTL */
+    width: auto;
+    margin-right: 1em;
+  }
+
+  /**
+   * (en) Content formating
+   * (de) Formatierung der Inhalte
+   */
+
+  /* overwrite Drupal .block ul setting */
+  /* .block ul { padding: 0 0 0 0; } */
+
+  /* Styling example for specific blocks
+  .block-fontsize,
+  .block-search,
+  .block-node {
+    margin: 0em 0em 1em 0em;
+    border: 1px solid #1a3444;
+  }
+  .block-fontsize h2,
+  .block-search h2,
+  .block-node h2 {
+    margin: 0;
+    padding: 0.2em 0.4em 0.2em;
+    border-bottom: 1px solid #1a3444;
+    background-color: #6A8494;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .block-fontsize .content,
+  .block-search .content,
+  .block-node .content { padding: 0.4em; } */
+
+  .comment h3,
+  .comment h3 a {
+    padding-top: 0.3em;
+    margin: 0;
+  }
+
+  .comment {
+    border: 1px solid #ddd;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    margin-top: 0.6em;
+  }
+
+  .node .content,
+  .comment .content { padding: 0.3em 0 0 0; }
+
+  .submitted,
+  .statistics_counter { color: #aab; }
+
+  .node .picture,
+  .comment .picture {
+    float: left; /* RTL */
+    margin: 0.3em 0.6em 0.15em 0;
+    border: 0;
+  }
+
+  /* Overwrite YAML base.css */
+  /* ul.links li {
+    margin-left: 0; /* RTL */
+    padding-left: 0; /* RTL */
+  } */
+
+  /* Drupal new-item marker */
+  .new {
+    font-weight: bold;
+    color: #f63;
+  }
+
+  .item-list ul li {
+    margin-left: .25em; /* RTL */
+    padding-left: 1.25em; /* RTL */
+    list-style-type: none;
+    list-style-image: none;
+    background: transparent url(../navigation/images/vlist/arrow/menu-leaf.gif) no-repeat 1px .35em;
+  }
+
+  /**
+   * (en) Login Block
+   * (de) Anmeldeblock
+   */
+  #user-login-form {
+    text-align: center;
+  }
+  #user-login-form ul {
+    text-align: left; /* RTL */
+  }
+
+  /**
+   * (en) Autocomplete fields
+   * (de) Felder mit Autovervollständigung
+   */
+
+  #autocomplete li {
+    cursor: default;
+    padding: 2px;
+    margin: 0;
+  }  
+
+  /**
+   * (en) Fieldset formating
+   * (de) Formatierung der Fieldsets
+   */
+
+  fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+  }
+  fieldset legend {
+    color: #444; /* IE color fix */
+    display: block; /* Fix disappearing legend in FF */
+    padding-right: .2em; /* FF fix for 'padding: 0 0.2em' bug */
+    padding-left: .2em; /* FF fix for 'padding: 0 0.2em' bug */
+  }
+  html.js fieldset.collapsed {
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: .6em;
+  }
+  html.js fieldset.collapsible legend a {
+    padding-left: 1.4em; /* RTL */
+    background: url(../navigation/images/vlist/arrow/menu-expanded.gif) no-repeat 0% 50%; /* RTL */
+  }
+  html.js fieldset.collapsed legend a {
+    background: url(../navigation/images/vlist/arrow/menu-collapsed.gif) no-repeat 0% 50%; /* RTL */
+  }
+
+  /**
+   * (en) Some configuration options are not fully reachable in some themes. This problem often
+   *      occours in fixed layouts with 3 columns and this is hereby solved with horizontal
+   *      scrollbars.
+   *
+   * (de) Teilweise sind Konfigurationsoptionen nicht in allen Themes vollständig erreichbar.
+   *      Dieses Problem tritt besonders deutlich bei fixen Layouts mit 3 Spalten auf und wird
+   *      hiermit durch horizontale Scrollbalken gelöst.
+   */
+  #block-admin-display-form,
+  #system-themes-form,
+  #user-admin-perm {
+    width: 99.9%;
+    overflow: auto;
+  }
+
+  /**
+   * (en) Userprofile formating
+   * (de) Formatierung der Userprofile
+   */
+
+  /* Bugfix My Account > Display, fixes content slip down problem */
+  .profile {
+    clear: none;
+    margin-top: 0em;
+  }
+
+  /* Bugfix for image position in My Account > Display */
+  .profile .picture { margin-top: 5em; }
+
+  /**
+   * (en) Theme settings page
+   * (de) Theme-Einstellungen page
+   */
+
+  #theme-settings-layout input.disabled {
+    background: #e8e8ec none repeat scroll 0%;
+    border: 1px solid #889;
+    color: #778;
+    padding: 1px 2px;
+  }
+  #theme-settings-layout input {
+    text-align: right;
+  }
+
+  /**
+  * Bugfixes
+  */
+  thead th {
+    /* padding-right: 0; */ /* Overrule system.css */
+  }
+
+  form table {
+    width: 99.9%;
+  }
+
+  /* Remove default list square in "admin/content/node" */
+  fieldset ul.clear-block li {
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    list-style-type: none;
+  }
+
+  /**
+  * Recoloring
+  */
+  thead th {
+    border-bottom: 2px solid #d3e7f4;
+  }
+  tr.even,
+  tr.odd,
+  tbody th {
+    border: solid #d3e7f4;
+    border-width: 1px 0;
+  }
+  tr.odd,
+  tr.info {
+    background-color: #edf5fa;
+  }
+  tr.even {
+    background-color: #fff;
+  }
+  tr.odd td.active {
+    background-color: #edf2f8;
+  }
+  tr.even td.active {
+    background-color: #e6f1f7;
+  }
+
+  /**
+   * Menu.module customisations
+   */
+  tr.odd td.menu-disabled {
+    background-color: #edf5fa;
+  }
+  tr.even td.menu-disabled {
+    background-color: #fff;
+  }
+
+  /**
+  * Repositioning
+  */
+  div.status,
+  div.messages,
+  div.warning,
+  div.preview {
+    margin: .75em 0 .75em;
+    padding: .5em 1em;
+  }
+  .messages ul {
+    margin: 0;
+  }
+
+  /*******************************************************************
+   * Color Module: Don't touch                                       *
+   *******************************************************************/
+
+  /**
+   * Generic elements.
+   */
+  .messages {
+    background-color: #fff;
+    border: 1px solid #d3e7f4;
+  }
+
+  .preview {
+    background-color: #fcfce8;
+    border: 1px solid #e5e58f;
+  }
+
+  div.status {
+    color: #3a3;
+    border-color: #c7f2c8;
+  }
+
+  div.error {
+    color: #c52020;
+  }
+
+  .form-item input.error,
+  .form-item textarea.error {
+    border: 1px solid #c52020;
+    color: #494949;
+  }
+
+  /**
+   * dblog.module
+   */
+  tr.dblog-user {
+    background-color: #fcf9e5;
+  }
+  
+  tr.dblog-user td.active {
+    background-color: #fbf5cf;
+  }
+  
+  tr.dblog-content {
+    background-color: #fefefe;
+  }
+  
+  tr.dblog-content td.active {
+    background-color: #f5f5f5;
+  }
+  
+  tr.dblog-warning {
+    background-color: #fdf5e6;
+  }
+  
+  tr.dblog-warning td.active {
+    background-color: #fdf2de;
+  }
+  
+  tr.dblog-error {
+    background-color: #fbe4e4;
+  }
+
+  tr.dblog-error td.active {
+    background-color: #fbdbdb;
+  }
+  tr.dblog-page-not-found,
+  tr.dblog-access-denied {
+    background: #d7ffd7;
+  }
+  tr.dblog-page-not-found td.active,
+  tr.dblog-access-denied td.active {
+    background: #c7eec7;
+  }
+
+  /**
+   * Status report colors.
+   */
+  table.system-status-report tr.error,
+  table.system-status-report tr.error th {
+    background-color: #fcc;
+    border-color: #ebb;
+    color: #200;
+  }
+  table.system-status-report tr.warning,
+  table.system-status-report tr.warning th {
+    background-color: #ffd;
+    border-color: #eeb;
+  }
+  table.system-status-report tr.ok,
+  table.system-status-report tr.ok th {
+    background-color: #dfd;
+    border-color: #beb;
+  }
+  table.system-status-report tr.info,
+  table.system-status-report tr.info th {
+    border-bottom-color: #ccc;
+  }
+
+}
