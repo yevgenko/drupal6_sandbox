@@ -4,3 +4,6 @@
 [submodule "dbscripts"]
 	path = dbscripts
 	url = git://github.com/ceardach/dbscripts.git
+[submodule "drush"]
+	path = drush
+	url = git://git.koumbit.net/drupal/modules/drush
