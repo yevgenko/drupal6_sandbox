@@ -20,6 +20,8 @@ namespace :deploy do
     asset_folders.each do |asset|
       run "mkdir -p #{shared_path}/assets/#{asset}"
     end
+    run "echo '0 * * * *  #{current_path}/drush/drush.php --root=#{current_path}/drupal cron > /dev/null 2>&1' >> #{home_dir}/crontab.conf"
+    run "crontab #{home_dir}/crontab.conf" # Apply
   end
 
   desc "Update the deployed code."
