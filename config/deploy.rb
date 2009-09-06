@@ -26,7 +26,7 @@ namespace :deploy do
 
   desc "Update the deployed code."
   task :update_code, :except => { :no_release => true } do
-    run "cd #{current_path}; git fetch origin; git reset --hard #{branch}; git submodule init && git submodule update"
+    run "cd #{current_path}; git fetch origin; git reset --hard origin/#{branch}; git submodule init && git submodule update"
   end
 
   namespace :rollback do
