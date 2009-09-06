@@ -44,8 +44,8 @@ namespace :deploy do
   desc "Override deploy:symlink task"
   task :symlink, :except => { :no_release => true } do
     asset_folders.each do |asset|
-      run "rm -rf #{current_path}/sites/default/#{asset}"
-      run "ln -nfs #{shared_path}/assets/#{asset} #{current_path}/sites/default/#{asset}"
+      run "rm -rf #{current_path}/sites/all/#{asset}"
+      run "ln -nfs #{shared_path}/assets/#{asset} #{current_path}/sites/all/#{asset}"
     end
   end
 
