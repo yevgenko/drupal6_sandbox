@@ -21,7 +21,7 @@ function admin_init() {
     // Conditionally include admin functions (form alters, etc.)
     module_load_include('inc', 'admin', 'admin.admin');
   }
-  
+
   $admin_theme = variable_get('admin_theme', 'slate');
 
   // Initialize the slate theme. Bypass the theme system entirely so we can load our own theme into place.
@@ -48,10 +48,16 @@ function admin_init() {
  */
 function admin_landing_page_access($path) {
   static $paths;
+  /**
+   * This cause problems when using various roles
+   * i.e. user can see items he does not have permission to
+   */
+  /*
   if (!isset($paths)) {
     $cache = cache_get('admin_paths');
     $paths = ($cache && !empty($cache->data)) ? $cache->data : array();
   }
+  */
   if (!isset($paths[$path])) {
     $item = db_fetch_array(db_query("SELECT mlid, menu_name FROM {menu_links} ml WHERE ml.router_path = '%s' AND module = 'system'", $path));
     $result = db_query("
@@ -592,7 +598,7 @@ function _admin_theme_rebuild($force = FALSE) {
 
     db_query("DELETE FROM {system} WHERE name = 'slate' AND type = 'theme'");
     db_query("INSERT INTO {system} (name, owner, info, type, filename, status, throttle, bootstrap) VALUES ('%s', '%s', '%s', '%s', '%s', %d, %d, %d)", $theme->name, $theme->owner, serialize($theme->info), 'theme', $theme->filename, isset($theme->status) ? $theme->status : 0, 0, 0);
-  
+
     variable_set('admin_theme_invalidated', FALSE);
   }
 }
