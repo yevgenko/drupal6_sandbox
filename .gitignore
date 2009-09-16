@@ -1,5 +1,4 @@
 *~
 *.swp
 sites/default/settings.php
-sites/all/files/*
 databases/workspace/*
