@@ -3,3 +3,4 @@
 sites/default/settings.php
 databases/workspace/*
 databases/tmp/*
+sites/all/files/simpletest/*
