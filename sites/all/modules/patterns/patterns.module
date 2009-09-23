@@ -203,7 +203,7 @@ function patterns_settings(&$form_state) {
   );
   // Reload patterns while we are here and ensure the lists are up to date
   patterns_get_patterns(TRUE);
-  
+
   return system_settings_form($form);
 }
 
@@ -843,7 +843,7 @@ function patterns_edit_submit($form, &$form_state) {
   $old = db_result(db_query('SELECT file FROM {patterns} WHERE name = "%s"', $form_state['values']['name']));
 
   // Load and save pattern
-  $load_func = 'patterns_load_' .$form_state['values']['format']; 
+  $load_func = 'patterns_load_' .$form_state['values']['format'];
   if ($pattern = $load_func($path)) {
     if ($old) {
       db_query('UPDATE {patterns} SET file = "%s", updated = "%s" WHERE pid = "%d"', $path, time(), $form_state['values']['pid']);
@@ -935,7 +935,7 @@ function patterns_get_patterns($reset = true) {
 
     $priority = array();
     $errors = array();
-    
+
     // Get list of directories to scan for patterns
     $patterns_paths = patterns_paths();
 
@@ -1015,7 +1015,7 @@ function patterns_paths() {
     'profiles/'. $profile .'/patterns',
     'sites/all/patterns'
   );
-  
+
   // allow any module to include patterns too
   foreach(module_invoke_all('patterns_directory') as $path) {
     if (is_dir($path)) {
@@ -1032,7 +1032,7 @@ function patterns_paths() {
 
 /**
  * Implementation of hook_patterns_directory()
- * 
+ *
  * Let us know about where the pattern files are at
  */
 function patterns_patterns_directory() {
@@ -1213,18 +1213,20 @@ function patterns_from_source($xml) {
 function _patterns_parse_tag($data, &$index = 0) {
   $pattern = array();
 
-  while ($current = $data[$index]) {
+  while (isset($data[$index]) && $current = $data[$index]) {
     $type = $current['type'];
 
-    foreach((array)$current['attributes'] as $key => $value) {
-      $current[strtolower($key)] = $value;
+    if (isset($current['attributes'])) {
+      foreach((array)$current['attributes'] as $key => $value) {
+        $current[strtolower($key)] = $value;
+      }
     }
 
     $current['tag'] = strtolower($current['tag']);
 
     unset($current['type'], $current['level'], $current['attributes']);
 
-    if (!trim($current['value']) && $current['value'] != "0") {
+    if (isset($current['value']) && !trim($current['value']) && $current['value'] != "0") {
       unset($current['value']);
     }
 
@@ -1240,7 +1242,7 @@ function _patterns_parse_tag($data, &$index = 0) {
         break;
       case 'complete':
         // In order to support more complex/non-standard features we can use serialized data
-        if ($current['attributes']['serialized']) {
+        if (isset($current['attributes']['serialized'])) {
           $value = unserialize($current['value']);
 
           if (isset($value)) {
@@ -1903,11 +1905,13 @@ function _patterns_rearrange_data($data, $parent = '') {
   $count=0;
 
   foreach($data as $key => $value) {
-    if ($value['value'] == 'false') {
-      $value['value'] = false;
-    }
-    else if ($value['value'] == 'true') {
-      $value['value'] = true;
+    if (isset($value['value'])) {
+      if ($value['value'] == 'false') {
+        $value['value'] = false;
+      }
+      else if ($value['value'] == 'true') {
+        $value['value'] = true;
+      }
     }
 
     if (is_numeric($key) && is_array($value) && count($value) == 2 && isset($value['tag']) && isset($value['value'])) {
