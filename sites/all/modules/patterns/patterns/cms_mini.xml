@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pattern>
+  <info>
+    <title>CMS Mini</title>
+    <description>CMS Mini pattern</description>
+    <author>wik</author>
+    <author_email>wik@rentasite.com.ua</author_email>
+    <version>0.1</version>
+    <category>Cms</category>
+    <core>6.x</core>
+  </info>
+
+  <!--
+    All the required modules (dependencies) MUST be listed before <actions> section
+  -->
+  <modules>
+    <module>devel</module>
+		<module>admin</module>
+		<module>fontsize</module>
+		<module>wysiwyg</module>
+		<module>imce</module>
+		<module>imce_wysiwyg</module>
+		<module>nodewords</module>
+  </modules>
+
+  <actions>
+
+    <role>senior editor</role>
+
+    <user>
+      <name>editor</name>
+      <password>editor</password>
+      <mail>wik-sbox_editor@ansdev.com</mail>
+      <roles>
+        <role>senior editor</role>
+      </roles>
+      <contact>0</contact>
+      <timezone>-0700</timezone>
+    </user>
+
+    <!--
+      set permissions
+      NOTE: all the permissions set for this role from before will be preserved
+      and only updated with the ones defined in this action - this is default
+      behaviour
+    -->
+    <permissions role="senior editor">
+      <value>admin inline</value>
+      <value>admin menu</value>
+      <value>administer blocks</value>
+      <value>access comments</value>
+      <value>administer comments</value>
+      <value>post comments</value>
+      <value>post comments without approval</value>
+      <value>access fontsize</value>
+      <value>administer menu</value>
+      <value>access content</value>
+      <value>administer nodes</value>
+      <value>create page content</value>
+      <value>create story content</value>
+      <value>delete any page content</value>
+      <value>delete any story content</value>
+      <value>delete own page content</value>
+      <value>delete own story content</value>
+      <value>edit any page content</value>
+      <value>edit any story content</value>
+      <value>edit own page content</value>
+      <value>edit own story content</value>
+      <value>revert revisions</value>
+      <value>view revisions</value>
+      <value>edit meta tags</value>
+      <value>access administration pages</value>
+      <value>access site reports</value>
+    </permissions>
+
+    <permissions role="anonymous user">
+      <value>access comments</value>
+      <value>post comments</value>
+    </permissions>
+
+    <!--
+      Set default theme. All other themes will be disabled at the same time.
+    -->
+    <theme>garland</theme>
+
+    <variables>
+      <variable name="site_name">Initial Project</variable>
+      <variable name="site_mail">noreply@ansdev.com</variable>
+    </variables>
+
+    <variables>
+      <variable name="site_frontpage">node</variable>
+      <variable name="date_default_timezone">-25200</variable>
+      <variable name="file_directory_path">sites/all/files</variable>
+    </variables>
+
+    <variables>
+      <variable name="user_register">0</variable>
+    </variables>
+
+   <!-- disable modules -->
+    <!--
+      IMPORTANT: Don't try to mix both enable and disable actions within the same <modules> tag.
+      Instead, create separate <modules> tags for "enable module" and "disable module" actions.
+    -->
+    <modules>
+      <module disable="1">update</module>
+    </modules>
+
+   </actions>
+</pattern>
