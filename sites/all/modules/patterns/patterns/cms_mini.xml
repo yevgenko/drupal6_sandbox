@@ -21,6 +21,9 @@
 		<module>imce</module>
 		<module>imce_wysiwyg</module>
 		<module>nodewords</module>
+		<module>xmlsitemap</module>
+		<module>xmlsitemap_node</module>
+		<module>xmlsitemap_engines</module>
   </modules>
 
   <actions>
@@ -92,6 +95,8 @@
       <variable name="site_frontpage">node</variable>
       <variable name="date_default_timezone">-25200</variable>
       <variable name="file_directory_path">sites/all/files</variable>
+      <variable name="xmlsitemap_engines_submit">0</variable>
+      <variable name="xmlsitemap_engines_cron_submit_frequency">-1</variable>
     </variables>
 
     <variables>
