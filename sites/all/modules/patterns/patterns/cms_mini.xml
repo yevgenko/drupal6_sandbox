@@ -16,7 +16,6 @@
   <modules>
     <module>devel</module>
 		<module>admin</module>
-		<module>fontsize</module>
 		<module>wysiwyg</module>
 		<module>imce</module>
 		<module>imce_wysiwyg</module>
@@ -108,9 +107,12 @@
       IMPORTANT: Don't try to mix both enable and disable actions within the same <modules> tag.
       Instead, create separate <modules> tags for "enable module" and "disable module" actions.
     -->
+
+    <!--
     <modules>
       <module disable="1">update</module>
     </modules>
+    -->
 
    </actions>
 </pattern>
